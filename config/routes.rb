@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'entrance/index'
+  root 'entrance#index'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
