@@ -14,7 +14,10 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+
+  # 2015/06/25　メール送信を行いたい為、下記の1行をコメントアウトする
+  # config.action_mailer.raise_delivery_errors = false
+
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   # Print deprecation notices to the Rails logger.
@@ -39,4 +42,13 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address => 'smtp.gmail.com',
+    :port => 587,
+    :authentication => :plain,
+    :user_name => ENV["GMAIL_ACCOUNT"],
+    :password => ENV["MAIL_PASSWORD"]
+  }
 end
