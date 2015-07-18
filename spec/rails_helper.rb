@@ -16,7 +16,8 @@ if ENV['CIRCLE_ARTIFACTS']
 end
 
 if ENV['CI']
-  SimpleCov.start 'rails'
+  require 'coveralls'
+  Coveralls.wear!('rails')
 end
 
 # Requires supporting ruby files with custom matchers and macros, etc, in

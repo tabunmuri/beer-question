@@ -98,4 +98,7 @@ end
 group :test do
   # カバレッジの測定
   gem 'simplecov', require: false
+
+  # Coveralls.io
+  gem 'coveralls', require: false
 end
