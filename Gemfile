@@ -36,6 +36,11 @@ gem 'unicorn'
 # device
 gem 'devise'
 
+# twitterとの連携を行うようのgem
+gem 'omniauth-twitter'
+
+
+
 # slim
 gem 'slim', :require => 'slim-rails'
 gem 'slim-rails'
