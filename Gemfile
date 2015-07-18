@@ -95,3 +95,7 @@ group :development, :test do
   gem 'launchy'
 end
 
+group :test do
+  # カバレッジの測定
+  gem 'simplecov', require: false
+end
