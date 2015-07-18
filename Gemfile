@@ -86,5 +86,12 @@ group :development, :test do
   # テスト
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+
+  # エンドツーエンドテスト
+  gem 'capybara'
+  gem 'poltergeist'
+
+  # capybaraでブラウザを開くときに必要な為
+  gem 'launchy'
 end
 
