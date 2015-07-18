@@ -36,9 +36,8 @@ gem 'unicorn'
 # device
 gem 'devise'
 
-# twitterとの連携を行うようのgem
+# twitterとの連携を行う用のgem
 gem 'omniauth-twitter'
-
 
 
 # slim
