@@ -77,5 +77,9 @@ group :development, :test do
   gem 'hirb'
   # hirbの日本語などマルチバイト文字の出力時の出力結果がすれる問題に対応
   gem 'hirb-unicode'
+
+  # テスト
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
